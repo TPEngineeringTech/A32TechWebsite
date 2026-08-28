@@ -375,6 +375,17 @@ h2 {
   color: var(--text-faint);
   font-family: var(--mono);
 }
+.feature-group {
+  grid-column: 1 / -1;
+  background: var(--bg);
+  padding: 1.25rem 1.75rem 0.5rem;
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
 
 /* Specs strip */
 .specs {
@@ -746,8 +757,10 @@ footer {
 
     <div class="tier-divider">
       <span class="tier-divider-label">Pro</span>
-      <p>€19.99 / year &nbsp;·&nbsp; €2.99 / month &nbsp;·&nbsp; 14-day free trial on annual plan</p>
+      <p>€19.99 / year &nbsp;·&nbsp; €2.99 / month &nbsp;·&nbsp; 14-day free trial on either plan</p>
     </div>
+
+    <div class="feature-group">Reference data</div>
 
     <div class="feature scroll-reveal">
       <div class="feature-num">06 / AMM</div>
@@ -775,24 +788,7 @@ footer {
     </div>
 
     <div class="feature scroll-reveal">
-      <div class="feature-num">09 / TOOLS</div>
-      <h3>Calculator Library</h3>
-      <p>Eleven aviation-specific calculators, each with its own full-screen view —
-      cable tension, fuel uplift, oil consumption, pressure, rivet layout, sheet metal
-      bend allowance, temperature, torque, torque wrench extension, weight, and wire
-      voltage drop. All formulas verified against published sources including AC
-      43.13-1B. Reorder and show or hide calculators to match your workflow.</p>
-    </div>
-
-    <div class="feature scroll-reveal">
-      <div class="feature-num">10 / TOOLS</div>
-      <h3>Converters</h3>
-      <p>Quick unit conversion for pressure, temperature, torque, and weight —
-      the conversions you reach for on the job without a second thought.</p>
-    </div>
-
-    <div class="feature scroll-reveal">
-      <div class="feature-num">11 / SYNC</div>
+      <div class="feature-num">09 / SYNC</div>
       <h3>Data Sync</h3>
       <p>Pull the latest procedure and reference data directly to the app without
       waiting for a store update. One-way and outbound only — no data ever leaves
@@ -800,7 +796,7 @@ footer {
     </div>
 
     <div class="feature scroll-reveal">
-      <div class="feature-num">12 / FLUIDS</div>
+      <div class="feature-num">10 / FLUIDS</div>
       <h3>Leakage Rates</h3>
       <p>Acceptable leakage limits grouped by system for quick on-the-job
       referencing. The kind of thing that lives on a scrap of paper in most
@@ -808,14 +804,14 @@ footer {
     </div>
 
     <div class="feature scroll-reveal">
-      <div class="feature-num">13 / DISPATCH</div>
+      <div class="feature-num">11 / DISPATCH</div>
       <h3>MCDL Limits</h3>
       <p>Dispatch limits for missing external parts with MCDL reference. Know
       what can go and what the requirement is before the crew asks.</p>
     </div>
 
     <div class="feature scroll-reveal">
-      <div class="feature-num">14 / MMEL</div>
+      <div class="feature-num">12 / MMEL</div>
       <h3>MMEL Reference</h3>
       <p>Full Master Minimum Equipment List, ATA grouped and colour-coded by
       category — Cat A through D. Tap any deferred defect in an ECAM reset to
@@ -825,35 +821,7 @@ footer {
     </div>
 
     <div class="feature scroll-reveal">
-      <div class="feature-num">15 / DOCS</div>
-      <h3>My Documents</h3>
-      <p>Import and store your own PDFs and manuals directly in the app. Native
-      PDF rendering with a built-in bookmark tree — tap any chapter or section
-      heading to jump straight to it. Sort by date, name, or type; swipe any
-      document to rename, share, or delete it. Document titles included in the
-      universal library search. Backed up separately from your Parts and Refs
-      library.</p>
-    </div>
-
-    <div class="feature scroll-reveal">
-      <div class="feature-num">16 / NOTES</div>
-      <h3>My Notepad</h3>
-      <p>A freeform scratchpad that lives in the app. Jot down shift notes,
-      snags, or anything you need to remember. Full-screen editor, auto-saves
-      on close, swipe to delete. Included in backup and restore.</p>
-    </div>
-
-    <div class="feature scroll-reveal">
-      <div class="feature-num">17 / REFS</div>
-      <h3>My References</h3>
-      <p>A single fully editable reference library, pre-populated with standard
-      AMM maintenance task references and searchable from the first launch. Add
-      your own entries, edit existing ones, or delete what you don't need.
-      Filter by type: AMM, TSM, SRM, or GEN.</p>
-    </div>
-
-    <div class="feature scroll-reveal">
-      <div class="feature-num">18 / STRUCT</div>
+      <div class="feature-num">13 / STRUCT</div>
       <h3>Panel Fastener Limits</h3>
       <p>Search any panel number and get its missing-fastener limits, AMM reference,
       and corrective action. Browse diagrams cover the belly, horizontal stabiliser,
@@ -862,17 +830,7 @@ footer {
     </div>
 
     <div class="feature scroll-reveal">
-      <div class="feature-num">19 / PARTS</div>
-      <h3>Parts Catalogue</h3>
-      <p>Build your own catalogue of go-to and hard-to-find part numbers. Each
-      entry supports IPC/CMM references, notes, and a photo of the part. Tag by
-      fleet type — including multi-fleet tagging for parts that span variants.
-      Back up and restore your catalogue, or share it with another engineer
-      instantly.</p>
-    </div>
-
-    <div class="feature scroll-reveal">
-      <div class="feature-num">20 / STRUCT</div>
+      <div class="feature-num">14 / STRUCT</div>
       <h3>Structures</h3>
       <p>Access panel, frame, and stringer reference across A320, A321, and A321
       XLR. Fuselage panel diagrams include horizontal and vertical stabiliser
@@ -881,11 +839,68 @@ footer {
     </div>
 
     <div class="feature scroll-reveal">
-      <div class="feature-num">21 / AVIONICS</div>
+      <div class="feature-num">15 / AVIONICS</div>
       <h3>VU Panels</h3>
       <p>Full overview and bay-by-bay reference for every VU panel on the aircraft.
       Navigate from the aircraft overview to any individual panel and see exactly
       what's installed — from 6VU to 126VU.</p>
+    </div>
+
+    <div class="feature-group">Your own library</div>
+
+    <div class="feature scroll-reveal">
+      <div class="feature-num">16 / BACKUP</div>
+      <h3>Backup &amp; Restore</h3>
+      <p>Export all your personal data — Parts, References, Notepad, and Documents
+      — as a single file. Restore on any device or hand your entire library to
+      another engineer in seconds.</p>
+    </div>
+
+    <div class="feature scroll-reveal">
+      <div class="feature-num">17 / DOCS</div>
+      <h3>My Documents</h3>
+      <p>Import and store your own PDFs and manuals directly in the app. Native
+      PDF rendering with a built-in bookmark tree — tap any chapter or section
+      heading to jump straight to it. Sort by date, name, or type; swipe any
+      document to rename, share, or delete it. Document titles included in the
+      universal library search.</p>
+    </div>
+
+    <div class="feature scroll-reveal">
+      <div class="feature-num">18 / NOTES</div>
+      <h3>My Notepad</h3>
+      <p>A freeform scratchpad that lives in the app. Jot down shift notes,
+      snags, or anything you need to remember. Full-screen editor, auto-saves
+      on close, swipe to delete. Included in backup and restore.</p>
+    </div>
+
+    <div class="feature scroll-reveal">
+      <div class="feature-num">19 / PARTS</div>
+      <h3>My Parts</h3>
+      <p>Build your own catalogue of go-to and hard-to-find part numbers. Each
+      entry supports IPC/CMM references, notes, and a photo of the part. Tag by
+      fleet type — including multi-fleet tagging for parts that span variants.</p>
+    </div>
+
+    <div class="feature scroll-reveal">
+      <div class="feature-num">20 / REFS</div>
+      <h3>My References</h3>
+      <p>A fully editable personal reference library. Add your own AMM, TSM, SRM,
+      or GEN entries, edit, delete, or filter by type. Searchable from the first
+      launch. Included in backup and restore.</p>
+    </div>
+
+    <div class="feature-group">Calculators</div>
+
+    <div class="feature scroll-reveal">
+      <div class="feature-num">21 / TOOLS</div>
+      <h3>Convert &amp; Calc</h3>
+      <p>Eleven aviation-specific calculators: cable tension, fuel uplift, oil
+      consumption, pressure, rivet layout, sheet metal bend allowance, temperature,
+      torque, torque wrench extension, weight, and wire voltage drop — each with
+      a full-screen view, formulas verified against published sources including AC
+      43.13-1B. Plus quick unit conversion for pressure, temperature, torque, and
+      weight. Reorder and show or hide to match your workflow.</p>
     </div>
 
   </div>
